@@ -1,27 +1,74 @@
-# EcoWatch
+# 🌍 EcoWatch
 
-## Arquitetura do projeto:
+**EcoWatch** é uma aplicação desenvolvida como parte da disciplina **Desenvolvimento de Sistemas Distribuídos** da **UNIP**.  
+O sistema permite consultar informações climáticas em tempo real, aplicando o modelo **cliente-servidor** dentro de um contexto de **sistemas distribuídos**.
+
+---
+
+## 📘 Sobre o Projeto
+
+O **EcoWatch** foi desenvolvido com o objetivo de aplicar, na prática, conceitos fundamentais de **sistemas distribuídos** e integração de **APIs externas**.  
+A aplicação funciona de forma simples: o usuário digita o nome de uma cidade, e o app retorna a **temperatura**, **condição climática** e **umidade**, obtidas via **API da OpenWeather**.
+
+---
+
+## ⚙️ Tecnologias Utilizadas
+
+### 🖥️ Back-End
+- Node.js  
+- Express  
+- Axios  
+- Dotenv  
+
+### 📱 Front-End
+- React Native  
+- Expo  
+- Axios  
+- TypeScript  
+
+---
+
+## 🧩 Estrutura do Projeto
+
+```
 EcoWatch/
 │
-├── back-end/                # Servidor local (Node.js)
-│   ├── src/
-│   │   ├── server.js        # Ponto de entrada principal do servidor
-│   │   ├── config/          # Configurações (porta, IP, etc)
-│   │   ├── services/        # Lógica de comunicação WebSocket
-│   │   └── utils/           # Funções auxiliares (ex: log, validações)
-│   ├── package.json
-│   └── README.md
+├── back-end/          
+│   ├── services/      
+│   ├── routes/        
+│   └── server.js      
 │
-├── front-end/               # Aplicativo mobile (Expo)
+├── front-end/         
 │   ├── src/
-│   │   ├── screens/         # Telas do app
-│   │   │   └── HomeScreen.tsx
-│   │   ├── components/      # Componentes reutilizáveis (ex: ModalEnvio, Header)
-│   │   ├── services/        # Comunicação com o servidor WebSocket
-│   │   ├── styles/          # Estilos locais (sem dependência de internet)
-│   │   └── App.tsx          # Ponto de entrada do aplicativo
-│   ├── app.json
-│   ├── package.json
-│   └── README.md
+│   │   ├── screens/   
+│   │   ├── services/  
+│   │   └── styles/    
 │
-└── README.md                # Documentação geral do projeto
+└── README.md          
+```
+
+---
+
+## 🚀 Execução Rápida
+
+### 🔹 Back-End
+```bash
+cd back-end
+npm install
+npm run start
+```
+
+### 🔹 Front-End
+```bash
+cd front-end
+npm install
+npx expo start
+```
+
+> ⚠️ Certifique-se de que o servidor Node.js e o celular estejam **na mesma rede Wi-Fi** (roteador local).
+
+---
+
+## 👨‍💻 Autor
+**Sérgio Hideki**  
+Desenvolvido como parte da APS da disciplina **Desenvolvimento de Sistemas Distribuídos – UNIP**
