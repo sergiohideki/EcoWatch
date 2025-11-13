@@ -24,7 +24,7 @@ npm install
 
 ## ▶️ Execução
 
-Crie um arquivo `.env` com sua chave da API:
+altere o arquivo `.env.example"` para `.env` e coloque sua chave da API:
 
 ```
 OPENWEATHER_API_KEY=SUA_CHAVE_AQUI
