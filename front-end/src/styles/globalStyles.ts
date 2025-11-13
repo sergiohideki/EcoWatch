@@ -1,4 +1,3 @@
-// front-end/src/styles/globalStyles.ts
 import { StyleSheet } from "react-native";
 
 export const theme = {

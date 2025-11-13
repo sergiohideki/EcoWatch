@@ -7,7 +7,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Rotas principais
 app.use("/api", weatherRoutes);
 
 const PORT = 3000;

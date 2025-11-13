@@ -6,9 +6,8 @@ import {
   TouchableOpacity,
   ActivityIndicator,
 } from "react-native";
-import api from "../services/api"; // ✅ Importa o axios configurado
+import api from "../services/api";
 import { globalStyles } from "../styles/globalStyles";
-import { getClima } from "../services/weatherService";
 
 
 export default function Home() {
@@ -24,7 +23,6 @@ export default function Home() {
     setDados(null);
 
     try {
-      // ✅ Faz a requisição para o backend
       const response = await api.get(`/clima?cidade=${cidade}`);
       setDados(response.data);
     } catch (e) {
