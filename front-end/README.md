@@ -19,6 +19,25 @@ cd front-end
 npm install
 ```
 
+--- 
+
+## 🌐 Configuração da Rede Local
+
+Para que o aplicativo consiga se comunicar com o servidor, é necessário ajustar o IP no arquivo: src/services/api.ts
+
+Exemplo:
+```ts
+const api = axios.create({
+  baseURL: "http://COLOQUE_SEU_IPV4_AQUI:3000/api",
+});
+```
+⚠️ Substitua COLOQUE_SEU_IPV4_AQUI pelo IPv4 da máquina que está executando o servidor Node.js.
+Para verificar seu IP local no Windows, use o comando:
+
+```
+ipconfig
+```
+
 ---
 
 ## ▶️ Execução
